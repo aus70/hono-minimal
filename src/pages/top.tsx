@@ -12,7 +12,7 @@ import type { Post } from '../index'
 // HTML syntax
 const List = (props: { post: Post }) => html`
   <li>
-    <a href={"/post/${props.post.id}"}>"${props.post.title}"</a>
+    <a href="/post/${props.post.id}">${props.post.title}</a>
   </li>
 `
 
