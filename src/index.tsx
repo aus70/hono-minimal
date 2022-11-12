@@ -27,7 +27,8 @@ const getPost = (id: string) => {
 
 
 const app = new Hono()
-
+app.use('/css/*', serveStatic({ root: './' }))
+app.use('/js/*', serveStatic({ root: './' }))
 app.use('/static/*', serveStatic({ root: './' }))
 //app.use('/favicon.ico', serveStatic({path: './favicon.ico' }))
 app.get('/', (c) => c.text('This is Home! You can access: /static/hello.txt'))
