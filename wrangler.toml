@@ -1,4 +1,6 @@
 name="hono-minimal"
-main="src/index.ts"
-
+main="src/index.tsx"
 compatibility_date = "2022-10-12"
+
+[site]
+bucket = "./assets"
